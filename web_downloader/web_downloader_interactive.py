@@ -168,8 +168,10 @@ class WebDownloader(object):
             print("All downloads completed.")
 
 
-if __name__ == "__main__":
-
+def main() -> None:
+    """
+    The main function.
+    """
     print(
         "A script to download elements (e.g. images) "
         "from the specified website.\n"
@@ -211,3 +213,8 @@ if __name__ == "__main__":
             "/bin/bash -c 'read -s -n 1 -p \"Press any key to exit.\"'"
         )
         print()
+
+
+if __name__ == "__main__":
+
+    main()

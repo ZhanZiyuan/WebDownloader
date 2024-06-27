@@ -167,8 +167,10 @@ class WebDownloader(object):
             print("All downloads completed.")
 
 
-if __name__ == "__main__":
-
+def main() -> None:
+    """
+    The main function.
+    """
     parser = argparse.ArgumentParser(
         prog="Web Downloader",
         description="Download elements from the specified website.",
@@ -234,3 +236,8 @@ if __name__ == "__main__":
     )
 
     downloader.download_all_elements()
+
+
+if __name__ == "__main__":
+
+    main()
