@@ -168,8 +168,10 @@ class WebDownloader(object):
             print("All downloads completed.")
 
 
-if __name__ == "__main__":
-
+def main() -> None:
+    """
+    The main function.
+    """
     print(
         "这是一个从指定的网址"
         "下载所有指定类型的网页元素（例如图片）的脚本。\n"
@@ -210,3 +212,8 @@ if __name__ == "__main__":
             "/bin/bash -c 'read -s -n 1 -p \"请按任意键退出。\"'"
         )
         print()
+
+
+if __name__ == "__main__":
+
+    main()
