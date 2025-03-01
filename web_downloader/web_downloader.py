@@ -38,7 +38,7 @@ class WebDownloader(object):
         "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0"
+        "Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0"
     }
 
     def __init__(self,
@@ -179,7 +179,7 @@ def main() -> None:
 
     parser.add_argument(
         "-w",
-        "--website_url",
+        "--website-url",
         default="https://takanenonadeshiko.jp/",
         type=str,
         help=(
@@ -189,7 +189,7 @@ def main() -> None:
     )
     parser.add_argument(
         "-f",
-        "--folder_path",
+        "--folder-path",
         default=Path(__file__).parent,
         type=str,
         help=(
@@ -199,7 +199,7 @@ def main() -> None:
     )
     parser.add_argument(
         "-e",
-        "--element_tag",
+        "--element-tag",
         default="image",
         type=str,
         choices=["image", "audio", "video"],
@@ -210,7 +210,7 @@ def main() -> None:
     )
     parser.add_argument(
         "-r",
-        "--requests_per_minute",
+        "--requests-per-minute",
         default=10,
         type=int,
         help=(
@@ -223,7 +223,7 @@ def main() -> None:
         "--version",
         action="version",
         help="Print the version number of %(prog)s and exit.",
-        version="%(prog)s 1.0.2"
+        version="%(prog)s 0.1.1"
     )
 
     command_args = parser.parse_args()
